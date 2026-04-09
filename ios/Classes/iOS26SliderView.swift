@@ -145,8 +145,8 @@ class iOS26SliderView: NSObject, FlutterPlatformView {
         channel.invokeMethod("valueChanged", arguments: ["value": Double(sliderControl.value)])
 
         // Add haptic feedback
-        let impact = UIImpactFeedbackGenerator(style: .light)
-        impact.impactOccurred()
+        // let impact = UIImpactFeedbackGenerator(style: .light)
+        // impact.impactOccurred()
     }
 
     @objc private func sliderTouchDown() {
@@ -159,8 +159,8 @@ class iOS26SliderView: NSObject, FlutterPlatformView {
         channel.invokeMethod("changeEnd", arguments: ["value": Double(sliderControl.value)])
 
         // Add haptic feedback
-        let impact = UIImpactFeedbackGenerator(style: .medium)
-        impact.impactOccurred()
+        // let impact = UIImpactFeedbackGenerator(style: .medium)
+        // impact.impactOccurred()
     }
 
     private func handleMethodCall(_ call: FlutterMethodCall, result: @escaping FlutterResult) {
