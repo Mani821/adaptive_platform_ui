@@ -748,6 +748,9 @@ class _AdaptiveScaffoldState extends State<AdaptiveScaffold> {
       'plus.circle': CupertinoIcons.add_circled,
       'plus': CupertinoIcons.add,
       'checkmark.circle': CupertinoIcons.checkmark_circle,
+      'tree.fill': CupertinoIcons.tree,
+    'sparkles': CupertinoIcons.sparkles,
+    'cart.fill': CupertinoIcons.cart_fill,
     };
     return iconMap[sfSymbol] ?? CupertinoIcons.circle;
   }
